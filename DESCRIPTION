@@ -12,5 +12,4 @@ Imports:
     dplyr,
     sf,
     terra,
-    tidyterra,
-    veghfsoil
+    tidyterra
