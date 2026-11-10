@@ -1,11 +1,16 @@
 Package: habitatPredictR
-Title: What the Package Does (One Line, Title Case)
+Title: Convert ST-Sim Outputs to ABMI Model Predictions
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Andrew", "Crosby", , "acrosbynorth@gmail.com", role = c("aut", "cre"))
+Description: Functions for automating the task of using output from a state-and-transition simulation model predict habitat using the ABMI species models.
+License: MIT + file LICENSE
 Config/roxygen2/version: 8.1.1
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
+Imports: 
+    dplyr,
+    sf,
+    terra,
+    tidyterra,
+    veghfsoil
