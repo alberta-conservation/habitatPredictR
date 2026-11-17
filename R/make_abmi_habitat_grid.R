@@ -44,7 +44,7 @@ make_habitat_grid <- function(reference = TRUE,
   age_class = as.character(cut(av,
                                breaks = seq(0, 80, 10),
                                labels = as.character(seq(1, 8, 1) - 1),
-                               right = TRUE))
+                               right = FALSE))
   age_class = if_else(av[, 1] == 80, "8", as.character(age_class))
   age_class = data.frame(age_class = if_else(age_class == 0, "R", age_class))
 
